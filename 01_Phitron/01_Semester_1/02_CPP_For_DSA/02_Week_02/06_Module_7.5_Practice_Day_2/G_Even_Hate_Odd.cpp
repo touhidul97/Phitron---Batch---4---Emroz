@@ -1,52 +1,46 @@
 #include<bits/stdc++.h>
 using namespace std;
-
 int main()
 {
-    int cases;
-
-    cin >> cases;
-    while (cases--)
+    int t;
+    cin >> t;
+    while (t--)
     {
-        int size, odd = 0, even = 0;
-        cin >> size;
-        int *arr = new int[size];// dynamic memory allocation
-        for (int i = 0; i < size; i++)
+        int n;
+        cin >> n;
+        if(n%2!=0)
         {
-            cin >> arr[i];
-            if (arr[i] % 2 == 0)
+            cout << "-1" << endl;
+            continue; // use continue instead of break
+        }
+        int a[n];
+        int evenCnt=0;
+        int oddCnt=0;
+        for (int i = 0; i < n; i++)
+        {
+            cin >> a[i];
+            if(a[i]%2==0)
             {
-                even++;
+                evenCnt++;
             }
             else
             {
-                odd++;
+                oddCnt++;
             }
         }
-        if (size % 2 == 0)
+        
+        if(evenCnt==oddCnt)
         {
-            if (even != odd)
-            {
-                int operation;
-                int matchTimes = size / 2;
-                if (even > odd)
-                {
-                    operation = matchTimes - odd;
-                }
-                else
-                {
-                    operation = matchTimes - even;
-                }
-                cout << operation << endl;
-            }
-            else
-            {
-                cout << 0 << endl;;
-            }
+            cout << "0" << endl;
+        }
+        else if(evenCnt==n || oddCnt==n)
+        {
+            cout << (n/2) << endl;
         }
         else
         {
-            cout << -1 << endl;;
+            cout << abs(evenCnt-oddCnt) << endl; // use abs to get the absolute difference
         }
     }
+    return 0;
 }

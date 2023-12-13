@@ -1,3 +1,0 @@
-1 Mango 200
-2 Laptop 45000
-3 Phone 23000
