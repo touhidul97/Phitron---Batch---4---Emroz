@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+    //input
+    int a,b,c,d,e,sum;
+    scanf("%d %d %d %d %d",&a, &b, &c, &d, &e);
+
+    //process
+    sum=a+b+c+d+e;
+
+    //output
+    printf("%d",sum);
+
+    //end
+    return 0;
+}

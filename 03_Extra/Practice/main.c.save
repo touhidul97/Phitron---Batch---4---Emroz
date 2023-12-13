@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+    int a, b,sum,multi;
+    printf("Please Enter the First Number:");
+    scanf("%d",&a);
+
+    printf("Please Enter the Second Number:");
+    scanf("%d",&b);
+    sum = a+b;
+    multi=a*b;
+    printf("The Sum is : %d",sum);
+    printf("The Sum is : %d",sum);
+    return;
+}

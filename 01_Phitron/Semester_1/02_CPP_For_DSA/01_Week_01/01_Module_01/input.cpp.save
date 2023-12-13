@@ -1,0 +1,13 @@
+#include<iostream>
+#include<stdio.h>
+using namespace std;
+int main()
+{
+    // char a,b;
+    // cin >> a >> b;
+    // int ascii=a;
+    // cout << ascii << endl;
+    // cout << a << endl << b << endl;
+    
+    return 0;
+}

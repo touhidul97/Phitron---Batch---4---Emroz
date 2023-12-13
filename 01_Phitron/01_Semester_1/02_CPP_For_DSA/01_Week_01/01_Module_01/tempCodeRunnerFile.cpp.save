@@ -1,0 +1,26 @@
+#include<iostream>
+#include<iomanip>
+#include<stdio.h>
+using namespace std;
+int main()
+{
+    int a,b;
+    // while(scanf("%d %d",&a,&b) != EOF)
+    // {
+
+    // }
+    int a,b;
+    while (cin >> a >> b)
+    {
+        cout << a << " " << b << endl;
+    }
+
+    // // set precision
+    // double a;
+    // cin >> a;
+
+    // // cout << a << endl;
+    // cout << fixed << setprecision (5) << a << endl;
+
+    return 0;
+}

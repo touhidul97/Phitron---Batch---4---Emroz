@@ -1,0 +1,53 @@
+#include<stdio.h>
+int main()
+{
+    int n;
+    scanf("%d", &n);
+    int a[n];
+    //input
+    for (int i = 0; i < n; i++)
+    {
+        scanf("%d", &a[i]);
+    }
+    // declaring counter for each number;
+
+    int zero = 0, one = 0;//and so on 
+
+    // checking condition;
+    for (int i = 0; i < n; i++)
+    {
+        if(a[i]==0)
+        {
+            zero++;
+        }
+        if(a[i]==1)
+        {
+            one++
+        }
+        // .
+        // .
+        // .
+        // and so on
+    }
+    
+
+    //output
+    printf("0 - %d", zero);
+    printf("1 - %d ", one);
+    // .
+    // .
+    // .
+    // so on
+    return 0;
+}
+
+// // int zero = 0;
+// int cnt[7] = {0};
+// for (int i = 0; i < n; i++)
+// {
+//     cnt[a[i]]++;
+// }
+// for (int i = 0; i < n; i++)
+// {
+//     printf("%d - %d\n", i, cnt[i]);
+// }
