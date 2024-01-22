@@ -4,7 +4,7 @@ int main()
 {
     int n;
     cin >> n;
-    // for(int i=1; i<=n; i++)
+    // for(int i=1; i<=n; i++) O(N*N)
     // {
     //     for (int j = 1; j <=n; j++)
     //     {
@@ -12,7 +12,7 @@ int main()
     //     }
     // }
 
-    for (int i = 0; i < n-1; i++)
+    for (int i = 0; i < n-1; i++) //O(N*N)
     {
         for (int j = i+1; j < n; j++)
         {

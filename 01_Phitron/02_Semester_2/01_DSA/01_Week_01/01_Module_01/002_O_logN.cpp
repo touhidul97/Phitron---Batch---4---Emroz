@@ -4,7 +4,7 @@ int main()
 {
     int n;
     cin >> n;
-    // while (n>0)//O(logN)
+    // while(n>0) //O(logN)
     // {
     //     int digit=n%10;
     //     cout << digit << endl;
@@ -14,6 +14,5 @@ int main()
     {
         cout << i << endl;
     }
-    
     return 0;
 }

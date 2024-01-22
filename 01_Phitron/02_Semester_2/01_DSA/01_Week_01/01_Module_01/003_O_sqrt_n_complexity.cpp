@@ -9,7 +9,7 @@ int main()
     //     if(n%i==0)
     //     {
     //         cout << i << " ";
-    //         if(n/i != 1)
+    //         if(n/i != i)
     //         {
     //             cout << n/i << endl;
     //         }
@@ -21,7 +21,7 @@ int main()
         if(n%i==0)
         {
             cout << i << " ";
-            if(n/i != 1)
+            if(n/i != i) 
             {
                 cout << n/i << endl;
             }
