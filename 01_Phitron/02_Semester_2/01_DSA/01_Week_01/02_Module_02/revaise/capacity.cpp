@@ -11,12 +11,14 @@ int main()
     cout << v.capacity() << endl;
     v.push_back(23);
     cout << v.capacity() << endl;
-    v.clear();
-    // for(int i=0; i<v.size(); i++)
-    // {
-    //     cout << v[i] << " ";
-    // }
-    cout << v[1] << endl;
-    
+    v.resize(2);
+    v.resize(7,100);
+    // v.clear();
+    for(int i=0; i<v.size(); i++)
+    {
+        cout << v[i] << " ";
+    }
+    // cout << v[1] << endl;
+
     return 0;
 }
